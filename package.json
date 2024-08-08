@@ -21,6 +21,6 @@
     "lint-staged": "^15.2.8"
   },
   "lint-staged": {
-    "*.js": "eslint"
+    "*.{js,ts}": "eslint"
   }
 }
