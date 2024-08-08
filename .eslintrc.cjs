@@ -2,7 +2,10 @@
 module.exports = {
   env: {
     browser: true,
+    es6: true,
   },
   root: true,
-  extends: "eslint:recommended",
+  parser: "@typescript-eslint/parser",
+  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  plugins: ["@typescript-eslint"],
 };
