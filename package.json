@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "cz": "czg",
-    "lint:eslint": "eslint",
-    "lint:prettier": "prettier --write"
+    "lint:eslint": "eslint --fix",
+    "lint:prettier": "prettier --write",
+    "lint:stylelint": "stylelint --fix"
   },
   "keywords": [],
   "author": "",
@@ -23,12 +24,15 @@
     "eslint-plugin-vue": "^9.27.0",
     "husky": "^9.1.4",
     "lint-staged": "^15.2.8",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "stylelint": "^16.8.1",
+    "stylelint-config-standard": "^36.0.1"
   },
   "lint-staged": {
     "*.{js,ts}": [
       "prettier --write",
       "eslint --fix"
-    ]
+    ],
+    "*.css": "stylelint --fix"
   }
 }
