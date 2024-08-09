@@ -13,6 +13,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:vue/vue3-recommended",
+    "plugin:prettier/recommended",
   ],
   plugins: ["@typescript-eslint", "vue"],
-};
+}
